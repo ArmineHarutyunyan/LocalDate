@@ -12,8 +12,8 @@ public class DateExcercises4{
 		if(isValid(format)){
 			System.out.println("Enter date of the same format, please");
 		}
-		/* NumberFormatException
-		int year = Integer.parseInt(sc.next());
+	/* NumberFormatException
+	int year = Integer.parseInt(sc.next());
         String operator = sc.next();
         int month = Integer.parseInt(sc.next());
         String operator2 = sc.next();
