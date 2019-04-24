@@ -13,10 +13,10 @@ public class DateExcercises4{
 			System.out.println("Enter date of the same format, please");
 		}
 		
-		String s = sc.nextLine();        
-        int year = Integer.valueOf(s.substring(0, 4));
-        int month = Integer.valueOf(s.substring(5, 7));
-        int day = Integer.valueOf(s.substring(8, 10));
+		String s = sc.nextLine();
+		int year = Integer.valueOf(s.substring(0, 4));
+		int month = Integer.valueOf(s.substring(5, 7));
+		int day = Integer.valueOf(s.substring(8, 10));
         
 		LocalDate date = LocalDate.of(year, month, day);
 		LocalDate dateNow = LocalDate.now();
