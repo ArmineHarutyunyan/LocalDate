@@ -12,14 +12,13 @@ public class DateExcercises4{
 		if(isValid(format)){
 			System.out.println("Enter date of the same format, please");
 		}
-	/* NumberFormatException
-	int year = Integer.parseInt(sc.next());
-        String operator = sc.next();
-        int month = Integer.parseInt(sc.next());
-        String operator2 = sc.next();
-        int day = Integer.parseInt(sc.next());
-        */
-		LocalDate date = LocalDate.of(2014, 03, 25);
+		
+		String s = sc.nextLine();        
+        int year = Integer.valueOf(s.substring(0, 4));
+        int month = Integer.valueOf(s.substring(5, 7));
+        int day = Integer.valueOf(s.substring(8, 10));
+        
+		LocalDate date = LocalDate.of(year, month, day);
 		LocalDate dateNow = LocalDate.now();
 		Duration duration = Duration.between(date.atStartOfDay(), dateNow.atStartOfDay());
 		System.out.println( duration.toDays() + " days.");
